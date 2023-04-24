@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hubbi Eğitim Portalı</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <!-- navbar navbar-dark bg-dark -->
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">H U B B I</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Anasayfa
+                        <span class="sr-only">(current)</span>
+                      </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Ne Sunuyoruz?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#paketlerimiz">Paketlerimiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">
+                      <input type="button" class="btn btn-warning" value="Giriş Yap">
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">
+                        <input type="button" class="btn btn-warning" value="Kayıt Ol">
+                    </a>
+                  </li>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">
+                      <input type="button" class="btn btn-dark" value="Yönetici">
+                  </a>
+                </li>
+              </li>
+                <div class="modal" id="myModal" aria-hidden="true" style="display: none;">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+      
+                          <!-- Modal Header -->
+                          <div class="modal-header">
+                              <h4 class="modal-title">Yönetici Girişi</h4>
+                              <button type="button" class="close" data-dismiss="modal">×</button>
+                          </div>
+      
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                              <form>
+                                  <label class="sr-only" for="username" id="username">Kullancı Adı</label>
+                                  <div class="input-group mb-3">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                      </div>
+                                      <input type="text" id="username" class="form-control" placeholder="Kullanıcı adınızı girin" aria-label="Username" aria-describedby="basic-addon1">
+                                  </div>
+      
+      
+                                  <label class="sr-only" for="Password" id="pass">Şifre</label>
+                                  <div class="input-group mb-2">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text" id="basic-addon2"><i class="fa fa-key"></i></span>
+                                      </div>
+                                      <input id="pass" type="password" class="form-control" placeholder="Şifrenizi girin" aria-label="Password" aria-describedby="basic-addon2">
+                                  </div>
+                              </form>
+                          </div>
+      
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                                <a href="adminpaneli/index.html">
+                              <button type="submit" class="btn btn-primary ">Giriş</button>
+                                </a>
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                          </div>
+      
+                      </div>
+                  </div>
+              </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  <header>
+  <!-- SLIDER -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('images/slider1.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4">HUBBI DÜNYASI</h2>
+                <p class="lead">Keşfedecek çok şey var. Aşağı kaydır.</p>
+              </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/slider2.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4">HUBBI KÜTÜPHANESİ</h2>
+                <p class="lead">Geniş kütüphanesi ile her şey ellerinin altında. Gözünün önünde</p>
+              </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/slider3.jpg')">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4">HUBBI PAYLAŞIMI</h2>
+                <p class="lead">HUBBI'de hesap kırışılır, dersler çalışılır.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+  </header>
+  <!-- SLIDER END -->
+  <br>
+  <br>
+  <div style="text-align: center;">
+      <h2>Ne sunuyoruz?</h2>
+    </div>
+  <!--FEATURES SECTION-->
+  <div id="features">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <section class="iq-features">
+              <div class="container">
+                 <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-12"></div>
+                    <div class="col-lg-6 col-md-12">
+                       <div class="holderCircle">
+                          <div class="round"></div>
+                          <div class="dotCircle">
+                             <span class="itemDot active itemDot1" data-tab="1">
+                             <i class="fa fa-clock-o"></i>
+                             <span class="forActive"></span>
+                             </span>
+                             <span class="itemDot itemDot2" data-tab="2">
+                             <i class="fa fa-comments"></i>
+                             <span class="forActive"></span>
+                             </span>
+                             <span class="itemDot itemDot3" data-tab="3">
+                             <i class="fa fa-user"></i>
+                             <span class="forActive"></span>
+                             </span>
+                             <span class="itemDot itemDot4" data-tab="4">
+                             <i class="fa fa-tags"></i>
+                             <span class="forActive"></span>
+                             </span>
+                             <span class="itemDot itemDot5" data-tab="5">
+                             <i class="fa fa-upload"></i>
+                             <span class="forActive"></span>
+                             </span>
+                             <span class="itemDot itemDot6" data-tab="6">
+                             <i class="fa fa-briefcase"></i>
+                             <span class="forActive"></span>
+                             </span>
+                          </div>
+                          <div class="contentCircle">
+                             <div class="CirItem title-box active CirItem1">
+                                <h2 class="title"><span>Saat</span></h2>
+                                <p>Eğitimde dakiklik önemlidir. Size söylediğimiz gün ve saatte yeni ders kaynağı elinizde.</p>
+                                <i class="fa fa-clock-o"></i>
+                             </div>
+                             <div class="CirItem title-box CirItem2">
+                                <h2 class="title"><span>Yalnız Değilsin </span></h2>
+                                <p>Yaşadığınız her problemde bizi arayabilirsiniz. Whatsapp ile canlı desteğimizle "yalnız değilsiniz"</p>
+                                <i class="fa fa-comments"></i>
+                             </div>
+                             <div class="CirItem title-box CirItem3">
+                                <h2 class="title"><span>Size Özel</span></h2>
+                                <p>Kaydol, Hubbi ile eğitime başla. Unutma kaynak bizden çalışmak senden. </p>
+                                <i class="fa fa-user"></i>
+                             </div>
+                             <div class="CirItem title-box CirItem4">
+                                <h2 class="title"><span>Ucuz</span></h2>
+                                <p>Hubbi eğitimi ticaret olarak görmeyen bir oluşum. Rakiplerine göre neredeyse bedava.</p>
+                                <i class="fa fa-tags"></i>
+                             </div>
+                             <div class="CirItem title-box CirItem5">
+                                <h2 class="title"><span>Arkadaşlarınla Paylaş</span></h2>
+                                <p>Hubbi hesabını 4 kişiye kadar öğrenci olan herkes kullanabilir. </p>
+                                <i class="fa fa-upload"></i>
+                             </div>
+                             <div class="CirItem title-box CirItem6">
+                                <h2 class="title"><span>Destek</span></h2>
+                                <p>Kaliteli videolar ile eğitiminize destek H U B B I'den.</p>
+                                <i class="fa fa-briefcase"></i>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12"></div>
+                 </div>
+              </div>
+  </section>
+</div>
+  
+    <!-- HAKKIMIZDA       -->
+    <div id="hakkimizda" class="bg-white">
+        <div class="container py-5">
+          <div class="row h-100 align-items-center py-5">
+            <div class="col-lg-6">
+              <h1 class="display-4">Hakkımızda</h1>
+              <p class="lead text-muted mb-0"><b>İnternetin getirdiği gücü çalışmandan esirgeme. Tüm derslerinin tüm konuları HUBBI ile karşında.</b>
+                HUBBI 2019'da kurulmuş tamamen alanında profosyonel eğitmenlerden oluşan bir eğitim portalıdır. Tabi bu eğitim portalı olmazsa
+                olmaz öğrenciler, yani sizlerle beraber oluşmuştur. Makul fiyata kaliteli eğitimi amaçlayan HUBBI, yıllar
+                içinde siz öğrenciler ve sayın velileriniz sayesinde çok büyük bir kütüphane olacak.
+              </p>
+              </p>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block"><img src="images/vector3.png" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-light py-5">
+        <div class="container py-5">
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+              <h2 class="font-weight-light">Hesap Kırışılır, HUBBI Paylaşılır</h2>
+              <p class="lead text-muted mb-0">H U B B I hesabını 4 arkadaşınla beraber aynı anda kullanabilirsin. Ücreti kırışır, hesabı paylaşırsınız. Böylelikle hem çok daha ekonomik fiyata
+                H U B B I'ye sahip olur hem de arkadaşlarınla ders çalışmanın keyfine varırsın.
+              </p>
+            </div>
+            <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="images/vector2.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-5 px-5 mx-auto"><img src="images/vector1.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+            <div class="col-lg-6">
+              <h2 class="font-weight-light">Geniş Kütüphane</h2>
+              <p class="lead text-muted mb-0">HUBBI gitgide genişleyen ve büyüyen kütüphaneye sahip. Siz öğrencilerden gelen isteklere göre şekillenen kaynaklar
+                güncel ve profosyonel şekilde işlenerek önünüze getirilir.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- PAKETLERİMİZ -->
+<div id="paketlerimiz" class="container-fluid bg-white p-5">
+    <div style="text-align: center;">
+        <h2>Paketlerimiz</h2>
+      </div>
+    <br>
+    <br>
+    <div class="row m-auto text-center w-75">
+      
+      <div class="col-4 princing-item red">
+        <div class="pricing-divider ">
+            <h3 class="text-light">BAŞLANGIÇ SETİ</h3>
+          <h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">TL</span>9.90<span class="h5">/ay</span></h4>
+           <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+        <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+        <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+        <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+        <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+      </svg>
+        </div>
+        <div class="card-body bg-white mt-0 shadow">
+          <ul class="list-unstyled mb-5 position-relative">
+            <li><b>1</b> öğrenciye kadar kullanabilir</li>
+            <li><b>2</b> derste özel destek</li>
+            <li><b>Ücretsiz</b> 7/24 destek</li>
+            <li><b>Tüm videolara erişim</b></li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block  btn-custom ">1 Ay Ücretsiz Dene</button>
+        </div>
+      </div>
+     
+
+      
+      
+      <div class="col-4 princing-item blue">
+        <div class="pricing-divider ">
+            <h3 class="text-light">ORTA SEVİYE SETİ</h3>
+          <h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">TL</span>19.90<span class="h5">/ay</span></h4>
+           <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+        <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+        <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+        <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+        <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+      </svg>
+        </div>
+
+        <div class="card-body bg-white mt-0 shadow">
+          <ul class="list-unstyled mb-5 position-relative">
+            <li><b>4 </b> öğrenciye kadar kullanabilir</li>
+            <li><b>5</b> derste özel destek</li>
+            <li><b>Ücretsiz</b> 7/24 destek</li>
+            <li><b>Tüm videolara erişim</b></li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block  btn-custom ">1 Ay Ücretsiz Dene</button>
+        </div>
+      </div>
+             
+      
+
+      
+      
+       
+      <div class="col-4 princing-item green">
+        <div class="pricing-divider ">
+            <h3 class="text-light">TÜM SET</h3>
+          <h4 class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">TL</span>29.90<span class="h5">/ay</span></h4>
+           <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+        <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+        <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+        <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+        <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+      </svg>
+        </div>
+
+        <div class="card-body bg-white mt-0 shadow">
+          <ul class="list-unstyled mb-5 position-relative">
+            <li><b>4</b> öğrenciye kadar kullanabilir</li>
+            <li><b>Tüm</b> derslerden özel destek</li>
+            <li><b>Ücretsiz</b> 7/24 destek</li>
+            <li><b>Tüm videolara erişim</b></li>
+          </ul>
+          <button type="button" class="btn btn-lg btn-block  btn-custom ">Satın Al</button>
+        </div>
+      </div>
+             
+       
+      
+      
+      
+      
+    </div>
+  </div>
+  <!-- PAKETLERIMIZ END -->
+  <!-- ÖĞRENCİLER NE DİYOR -->
+  <section class="py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-mb-6 mx-auto">
+                  <header class="text-center pb-5">
+                      <h1 class="h2">Öğrencilerimiz Ne Diyor?</h1>
+                      <p>HUBBI kullanan öğrenciler HUBBI hakkında ne diyor bir göz atın.</p>
+                  </header>
+              </div>
+          </div>
+  
+  
+          <div class="row">
+              <div class="col-md-6">
+                  <blockquote class="blockquote blockquote-custom bg-white p-4 shadow rounded">
+                      <div class="blockquote-custom-icon bg-warning shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                      <p class="mb-0 mt-2 font-italic">"HUBBI ile kaliteli eğitimi çok ucuza alıyorum. Derslerim gitgide iyiye gidiyor. Herkese tavsiye ederim. Teşekkürler HUBBI"</p>
+                      <footer class="blockquote-footer pt-4 mt-4 border-top">1 Yıllık Hubbi Öğrencisi
+                          <cite title="Source Title">Mert K****</cite>
+                      </footer>
+                  </blockquote>
+              </div>
+              <div class="col-md-6">
+                  <blockquote class="blockquote blockquote-custom bg-white p-4 shadow rounded">
+                    <div class="blockquote-custom-icon bg-warning shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+                    <p class="mb-0 mt-2 font-italic">"Çocuğum buradan öğrendiği bilgiler ile matematik kunduzu oldu. Evde hergün bir matematik problemi tartışılıyor.Teşekkürler HUBBI</p>
+                    <footer class="blockquote-footer pt-4 mt-4 border-top">3 Aylık Hubbi Öğrencisi'nin Velisi
+                        <cite title="Source Title">Caner Ş****</cite>
+                    </footer>
+                </blockquote>
+              </div>
+          </div>
+  </section>
+  <!-- OGRENCILER NE DİYOR ? END -->
+<!--Bottom Footer-->
+<div class="bottom section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="copyright">
+            <p>© <span>2019</span> <a href="index.html" class="transition">H U B B I</a> Tüm hakları saklıdır.</p>
+            <a href="#carouselExampleIndicators">
+              <input type="button" class="btn btn-warning" value="Geri Dön">
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Bottom Footer-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/features.js"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
